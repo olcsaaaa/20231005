@@ -1,11 +1,9 @@
-import './App.css';
-import "bootstrap/dist/css/bootstrap.min.css"
-import LandingPage from "./components/LandingPage"
+import './App.css'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import LandingPage from './components/LandingPage'
 
-function App() {
-    return (
-        <LandingPage/>
-    );
+function App () {
+  return <LandingPage />
 }
 
-export default App;
+export default App
