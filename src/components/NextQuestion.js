@@ -9,8 +9,8 @@ function NextQuestion(){
         <p>HELLO</p>
         <button id={"gomb1"}> hali </button>
         <button id={"gomb2"}>hacls</button>
-        <button id={"gomb3"}></button>
-        <button id={"gomb4"}></button>
+        <button id={"gomb3"} />
+        <button id={"gomb4"} />
     </div>
     )
 }
