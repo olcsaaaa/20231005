@@ -4,10 +4,10 @@ function NextQuestion () {
   return (
     <div>
       <p>HELLO</p>
-      <button id='gomb1'></button>
-      <button id='gomb2'></button>
-      <button id='gomb3'/>
-      <button id='gomb4'/>
+      <button id='gomb1' />
+      <button id='gomb2' />
+      <button id='gomb3' />
+      <button id='gomb4' />
     </div>
   )
 }
