@@ -32,9 +32,6 @@ class questionLogic {
     //     )
     // }
 
-    constructor() {
-
-    }
 }
 
 export default new questionLogic
