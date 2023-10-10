@@ -17,15 +17,16 @@ class LandingPage extends Component {
                         <Row xs={2}>
                             <Col md/>
                             <Col className="d-flex justify-content-center" md>
-                                <Button variant='outline-success' onClick={NextQuestion}>Let's play</Button>
+
+                                <Button variant='outline-success' onClick={NextQuestion}>Lets play</Button>
                             </Col>
                             <Col md>
-                                <Button variant='outline-success'onClick={quizQuestion.getQuestion(1)}>Testussy</Button>
+                                <Button variant='outline-success' onClick={quizQuestion.getQuestion}>Test</Button>
                             </Col>
                         </Row>
                         <Row>
                             <Col>
-                                <Button variant='outline-success'onClick={quizQuestion.getQuestion}>A1ussy</Button>
+                                <Button variant='outline-success' onClick={quizQuestion.getQuestion}>A1</Button>
                             </Col>
                         </Row>
                     </Card.Body>
