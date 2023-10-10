@@ -39,7 +39,4 @@ class questionLogic {
         question = this.getQuestion()
     }
 }
-
 export default new questionLogic
-
-
