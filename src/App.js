@@ -1,7 +1,5 @@
+import logo from './logo.svg';
 import './App.css';
-import "bootstrap/dist/css/bootstrap.min.css"
-import {Button,  Container, Card, Row, Col} from "react-bootstrap";
-import PrintQuestionModel from "./logic/QuizQuestion";
 
 function App() {
     return (
