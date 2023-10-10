@@ -13,7 +13,7 @@ const modelQuestions = [
 
 const PrintQuestionModel = function (index) {
  const model = modelQuestions[index]
-    const message = `Question:${model.Question}, A1: ${model.Answer1}`
+    const message = "Question:"+model.Question+", A1: "+model.Answer1
     prompt(message)
 
 

@@ -1,3 +1,6 @@
+body{
+    background-color: #20376B;
+}
 .App{
     display: flex;
     flex-wrap: wrap;
