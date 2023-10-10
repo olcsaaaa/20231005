@@ -1,37 +1,36 @@
-const {Component} = require("react");
+const { Component } = require('react')
 
 class Form extends Component {
-    constructor(props) {
-        super(props);
+  constructor (props) {
+    super(props)
 
-        this.state = {
-            count: 0,
-
-        }
+    this.state = {
+      count: 0
     }
+  }
 
-    addCount = ()=> {
-        this.setState({
-            count: this.state.count+1
-        })
-    }
-    subtractCount = ()=> {
-        this.setState({
-            count: this.state.count-1
-        })
-    }
+  addCount = () => {
+    this.setState({
+      count: this.state.count + 1
+    })
+  }
 
-    render() {
-        const {count} = this.state;
-        return (
-            <div className={"imageContainer"}>
-                <p>Count: {count}</p>
-                <button onClick={this.addCount}>+</button>
-                <button onClick={this.subtractCount}>-</button>
-            </div>
-        )
-    }
+  subtractCount = () => {
+    this.setState({
+      count: this.state.count - 1
+    })
+  }
 
+  render () {
+    const { count } = this.state
+    return (
+      <div className='imageContainer'>
+        <p>Count: {count}</p>
+        <button onClick={this.addCount}>+</button>
+        <button onClick={this.subtractCount}>-</button>
+      </div>
+    )
+  }
 }
 
-export default Form;
+export default Form
