@@ -5,32 +5,31 @@
 //     {Question: "",Answer1: "", Answer2: "", Answer3: "",Truth: ""},
 // ]
 const questionMatrix = [
-    // ["Question", "Answer1", "Answer2", "Answer3", "Answer4", "Index of correct answer(int)"],
-    ['Q1', 'A1', 'B1', 'C1', 'D1', 2],
-    ['Q2', 'A2', 'B2', 'C2', 'D2', 4],
-    ['Q3', 'A3', 'B3', 'C3', 'D3', 3]
+  // ["Question", "Answer1", "Answer2", "Answer3", "Answer4", "Index of correct answer(int)"],
+  ['Q1', 'A1', 'B1', 'C1', 'D1', 2],
+  ['Q2', 'A2', 'B2', 'C2', 'D2', 4],
+  ['Q3', 'A3', 'B3', 'C3', 'D3', 3]
 ]
-let qCount = 0
+const qCount = 0
 
 class GetQnA {
+  getQuestionIndexes () {
+    return questionMatrix.length - 1
+  }
 
-    getQuestionIndexes() {
-        return questionMatrix.length - 1
-    }
+  static getQuestion (questionId) {
+    return questionMatrix[questionId][0]
+  }
 
-    static getQuestion(questionId) {
-        return questionMatrix[questionId][0]
-    }
+  static getAnswer (questionId, answerId) {
+    return questionMatrix[questionId][answerId]
+  }
 
-    static getAnswer(questionId, answerId) {
-        return questionMatrix[questionId][answerId]
-    }
-
-    static checkAnswer(questionId, answerId) {
-        let answer = questionMatrix[questionId][answerId]
-        let solution = questionMatrix[questionId][questionMatrix.length - 1]
-        return answerId === solution;
-    }
+  static checkAnswer (questionId, answerId) {
+    const answer = questionMatrix[questionId][answerId]
+    const solution = questionMatrix[questionId][questionMatrix.length - 1]
+    return answerId === solution
+  }
 }
 
 export default new GetQnA()
