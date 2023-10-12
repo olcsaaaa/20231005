@@ -2,7 +2,7 @@ import {Button, Container, Card, Row, Col} from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css"
 import {Component} from "react";
 import NextQuestion from "./NextQuestion";
-import quizQuestion from "../logic/QuizQuestion";
+import quizQuestion from "../logic/GetQnA";
 class LandingPage extends Component {
     render() {
         return (
