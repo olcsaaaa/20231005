@@ -20,15 +20,13 @@ class questionLogic {
     return (title.innerText = questionMatrix[index][0])
   }
 
-  // getAnswer(index, buttonId) {
-  //
-  //     const answerId = buttonId.slice(-1)
-  //     let bill = document.getElementById(answerId)
-  //     let answer = questionMatrix[index][buttonId]
-  //     return(
-  //         bill.innerText = answer
-  //     )
-  // }
+  getAnswer(index, buttonId, answerId) {
+      let bill = document.getElementById(answerId)
+      let answer = questionMatrix[index][buttonId]
+      return(
+          bill.innerText = answer
+      )
+  }
 }
 
 export default new questionLogic()
