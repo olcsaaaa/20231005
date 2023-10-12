@@ -10,12 +10,12 @@ body {
   height: 30rem;
   background-color: #f2f3e0;
 }
-.Font{
-    font-weight: bold;
-    color: #20376B;
-    font-size: xx-large;
-    font-family: Arial, sans-serif;
+.Font {
+  font-weight: bold;
+  color: #20376b;
+  font-size: xx-large;
+  font-family: Arial, sans-serif;
 }
-#nextButton{
-    color: red;
+#nextButton {
+  color: red;
 }
