@@ -10,7 +10,6 @@ const questionMatrix = [
     ['Q2', 'A2', 'B2', 'C2', 'D2', 4],
     ['Q3', 'A3', 'B3', 'C3', 'D3', 3]
 ]
-let qCount = 0
 
 class GetQnA {
 
@@ -27,8 +26,8 @@ class GetQnA {
     }
 
      checkAnswer(questionId, answerId) {
-        let answer = questionMatrix[questionId][answerId]
-        let solution = questionMatrix[questionId][questionMatrix.length - 1]
+        const answer = questionMatrix[questionId][answerId]
+        const solution = questionMatrix[questionId][questionMatrix.length - 1]
         return answerId === solution;
     }
 
